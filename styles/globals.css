@@ -15,8 +15,13 @@
 
 @layer base {
   
+  html {
+    @apply scroll-smooth;
+  }
+
   body {
     background-color: #F5F5F5;
+    @apply select-none;
   }
 
   * {
@@ -78,5 +83,14 @@
 @layer components {
   .text-normal {
     @apply text-[14px] md:text-[22px];
+  }
+  
+
+  .title-custom {
+    @apply uppercase fs-monument text-[40px] leading-[35px] md:text-[80px] md:leading-[60px] 2xl:text-[160px] 2xl:leading-[130px];
+  }
+
+  .image-skills {
+    @apply w-[100px] h-[100px] grayscale hover:grayscale-0 transition-all duration-700 ease-in-out contrast-75 hover:contrast-100 hover:drop-shadow-xl hover:animate-bounce;
   }
 }
