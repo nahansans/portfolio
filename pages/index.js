@@ -52,7 +52,7 @@ export default function Home() {
           <div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
               <p className="text-[14px] md:text-[16px] text-justify">
-                Hi, I’m Hanif, Naufal Hanif. I am an IT Professional who has experience in technology and web application development. I am also very interested in learning new things related to the development of the IT world. I’m also good at @Laravel @JavaScript @Nextjs @VueJs @PHP @ ReactNative
+                {`Hi, I’m Hanif, Naufal Hanif. I am an IT Professional who has experience in technology and web application development. I am also very interested in learning new things related to the development of the IT world. I’m also good at @Laravel @JavaScript @Nextjs @VueJs @PHP @ ReactNative`}
               </p>
               <div className="">
                 <img src={ImageMe.src} alt="" className="w-[273px] mx-auto" />
@@ -64,7 +64,7 @@ export default function Home() {
               Follow me
             </p>
             <p className="text-[14px] md:text-[16px] mb-[40px]">
-              I’m available on the following social media platforms.
+              {`I’m available on the following social media platforms.`}
             </p>
             <div className="grid grid-cols-5 gap-0 pb-[10px] border-b border-black">
               <a href="" className="text-[20px] md:text-[40px]">
