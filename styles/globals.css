@@ -42,8 +42,8 @@
   .bg-round {
     background-image: url('../public/images/bg-round.png');
     background-repeat: no-repeat;
-    background-size: 30vw;
-    background-position: center 200px;
+    background-size: 90vw;
+    background-position: center 350px;
   }
 
   @media (min-width: 768px) {
