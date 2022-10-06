@@ -26,7 +26,7 @@ export default function Home() {
       <Header executeScroll={executeScroll} />
       <div className="container py-[100px] bg-round">
         <div>
-          <h1 className="title-custom">
+          <h1 className="title-custom max-w-[760px] 2xl:max-w-full">
             WEB DEVELOPER & TECH ENTHUSIAST
           </h1>
         </div>
