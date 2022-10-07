@@ -1,7 +1,8 @@
 import { useRef } from "react"
+import Image from 'next/future/image'
+
 import Header from "@/components/Header"
 import Top from "@/components/Top"
-import Image from "next/image"
 import ArrowBottom from "@/public/icons/arrow-bottom.png"
 import ImageMe from "@/public/images/me.png"
 import LaravelImage from "@/public/images/laravel.png"
@@ -31,9 +32,9 @@ export default function Home() {
           </h1>
         </div>
         <div className="flex justify-between items-end">
-          <img
+          <Image
             onClick={executeScroll}
-            src={ArrowBottom.src} alt="" className="w-[48px] md:w-[80px] 2xl:w-[118px] mt-[22px] md:mt-[22px] cursor-pointer" />
+            src={ArrowBottom} alt="" className="w-[48px] md:w-[80px] 2xl:w-[118px] mt-[22px] md:mt-[22px] cursor-pointer" />
           <a href="" className="text-normal">
             About Hanif
           </a>
@@ -55,7 +56,7 @@ export default function Home() {
                 {`Hi, I’m Hanif, Naufal Hanif. I am an IT Professional who has experience in technology and web application development. I am also very interested in learning new things related to the development of the IT world. I’m also good at @Laravel @JavaScript @Nextjs @VueJs @PHP @ ReactNative`}
               </p>
               <div className="">
-                <img src={ImageMe.src} alt="" className="w-[273px] mx-auto" />
+                <Image src={ImageMe} alt="" className="w-[273px] mx-auto" />
               </div>
             </div>
           </div>
@@ -104,44 +105,28 @@ export default function Home() {
         <div className="mt-[40px] md:mt-[60px] grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="order-last md:order-first grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="text-center">
-              <a href="" target="_blank">
-                <img src={LaravelImage.src} alt="" className="image-skills mx-auto" />
-              </a>
+                <Image src={LaravelImage} alt="" className="image-skills mx-auto" />
             </div>
             <div className="text-center">
-              <a href="" target="_blank">
-                <img src={VueImage.src} alt="" className="image-skills mx-auto" />
-              </a>
+                <Image src={VueImage} alt="" className="image-skills mx-auto" />
             </div>
             <div className="text-center">
-              <a href="" target="_blank">
-                <img src={ReactImage.src} alt="" className="image-skills mx-auto" />
-              </a>
+                <Image src={ReactImage} alt="" className="image-skills mx-auto" />
             </div>
             <div className="text-center">
-              <a href="" target="_blank">
-                <img src={NextImage.src} alt="" className="image-skills mx-auto" />
-              </a>
+                <Image src={NextImage} alt="" className="image-skills mx-auto" />
             </div>
             <div className="text-center">
-              <a href="" target="_blank">
-                <img src={JSImage.src} alt="" className="image-skills mx-auto" />
-              </a>
+                <Image src={JSImage} alt="" className="image-skills mx-auto" />
             </div>
             <div className="text-center">
-              <a href="" target="_blank">
-                <img src={PhpImage.src} alt="" className="image-skills mx-auto" />
-              </a>
+                <Image src={PhpImage} alt="" className="image-skills mx-auto" />
             </div>
             <div className="text-center">
-              <a href="" target="_blank">
-                <img src={PsqlImage.src} alt="" className="image-skills mx-auto" />
-              </a>
+                <Image src={PsqlImage} alt="" className="image-skills mx-auto" />
             </div>
             <div className="text-center">
-              <a href="" target="_blank">
-                <img src={MysqlImage.src} alt="" className="image-skills mx-auto" />
-              </a>
+                <Image src={MysqlImage} alt="" className="image-skills mx-auto" />
             </div>
           </div>
           <div>

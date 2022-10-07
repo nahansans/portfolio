@@ -91,6 +91,6 @@
   }
 
   .image-skills {
-    @apply w-[100px] h-[100px] grayscale hover:grayscale-0 transition-all duration-700 ease-in-out contrast-75 hover:contrast-100 hover:drop-shadow-xl hover:animate-bounce;
+    @apply w-[100px] h-[100px] grayscale hover:grayscale-0 transition-all duration-700 ease-in-out contrast-75 hover:contrast-100 hover:drop-shadow-xl hover:animate-bounce cursor-pointer;
   }
 }
