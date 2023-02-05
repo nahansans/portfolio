@@ -193,16 +193,16 @@ export default function Home() {
 
         <Case
             number = "/02"
-            type = "Update several modules (maintenance)"
+            type = "Frontend"
             url = "https://www.modena.com"
             // image = {CasesModena}
-            title = "modena cr"
-            desc = "!!CHANGE REQUEST!!"
+            title = "modena (maintenance)"
+            desc = ""
           />
 
         <Case
             number = "/03"
-            type = "Admin Panel BQMI to manage their products"
+            type = "Admin Panel/ Backend"
             url = "#"
             // image = {CasesModena}
             title = "bqmi kemenag"
@@ -211,7 +211,7 @@ export default function Home() {
 
         <Case
             number = "/04"
-            type = "Boquet digital"
+            type = "Frontend"
             url = "https://digiflora.id"
             // image = {CasesModena}
             title = "Digiflora"
@@ -220,7 +220,7 @@ export default function Home() {
           
           <Case
             number = "/05"
-            type = "Indonesia Miner event organizer"
+            type = "Frontend"
             url = "https://indonesiaminer.com"
             // image = {CasesModena}
             title = "Laguna - Indonesia Miner"
@@ -229,7 +229,7 @@ export default function Home() {
 
           <Case
             number = "/06"
-            type = "Update several modules (maintenance)"
+            type = "Admin Panel/ Backend, API"
             url = "https://indonesiaminer.com"
             // image = {CasesModena}
             title = "Sigma bimed - CR"
@@ -238,7 +238,7 @@ export default function Home() {
           
           <Case
             number = "/07"
-            type = "Manage catalogs, transactions, etc and make payments for partner/clients who has a songs/albums/labels"
+            type = "Admin Panel/ Backend"
             url = "https://inside.co.id"
             // image = {CasesModena}
             title = "Inside Digital"
@@ -247,7 +247,7 @@ export default function Home() {
 
           <Case
             number = "/08"
-            type = "Order song with legal copyright for personal or church and user can be a partner"
+            type = "Admin Panel/ Backend, Databases"
             url = ""
             // image = {CasesModena}
             title = "Alcore IUP (Backend)"
@@ -256,7 +256,7 @@ export default function Home() {
           
           <Case
             number = "/09"
-            type = "Laravel"
+            type = "Frontend"
             url = "https://indonesiaminer.com"
             // image = {CasesModena}
             title = "Duta IndoMandiri"
