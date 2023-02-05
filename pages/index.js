@@ -13,6 +13,9 @@ import JSImage from "@/public/images/js.png"
 import PhpImage from "@/public/images/php.png"
 import PsqlImage from "@/public/images/psql.png"
 import MysqlImage from "@/public/images/mysql.png"
+import Case from "@/components/Case"
+import CasesTokomaid from "@/public/images/tokomaid.jpg"
+import CasesModena from "@/public/images/modena_2.jpg"
 
 
 export default function Home() {
@@ -169,8 +172,89 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            </div>
+          </div>
         </div>
+
+        <Case
+          number = "/01"
+          type = "Landing Page"
+          url = "http://tokomaid.com"
+          image = {CasesTokomaid}
+          title = "Tokomaid"
+          desc = ""
+        />
+
+      <Case
+          number = "/02"
+          type = "Update several modules (maintenance)"
+          url = "https://www.modena.com"
+          // image = {CasesModena}
+          title = "modena cr"
+          desc = "!!CHANGE REQUEST!!"
+        />
+
+      <Case
+          number = "/03"
+          type = "Admin Panel BQMI to manage their products"
+          url = "#"
+          // image = {CasesModena}
+          title = "bqmi kemenag"
+          desc = "Admin Panel"
+        />
+
+      <Case
+          number = "/04"
+          type = "Boquet digital"
+          url = "https://digiflora.id"
+          // image = {CasesModena}
+          title = "Digiflora"
+          desc = "Papan bunga digital - cara yang ramah lingkungan untuk mengirim ucapan kepada orang yang Anda sayangi."
+        />
+        
+        <Case
+          number = "/05"
+          type = "Indonesia Miner event organizer"
+          url = "https://indonesiaminer.com"
+          // image = {CasesModena}
+          title = "Laguna - Indonesia Miner"
+          desc = "onesia Miner 2023 is the premier Conference & Exhibition for Indonesia Mining Top Leaders, Experts, Decision makers and all mining Industry value chain meets."
+        />
+
+        <Case
+          number = "/06"
+          type = "Update several modules (maintenance)"
+          url = "https://indonesiaminer.com"
+          // image = {CasesModena}
+          title = "Sigma bimed - CR"
+          desc = ""
+        />
+        
+        <Case
+          number = "/07"
+          type = "Manage catalogs, transactions, etc and make payments for partner/clients who has a songs/albums/labels"
+          url = "https://inside.co.id"
+          // image = {CasesModena}
+          title = "Inside Digital"
+          desc = ""
+        />
+
+        <Case
+          number = "/08"
+          type = "Order song with legal copyright for personal or church and user can be a partner"
+          url = ""
+          // image = {CasesModena}
+          title = "Alcore IUP (Backend)"
+          desc = ""
+        />
+        
+        <Case
+          number = "/09"
+          type = "Laravel"
+          url = "https://indonesiaminer.com"
+          // image = {CasesModena}
+          title = "Duta IndoMandiri"
+          desc = ""
+        />
       </div>
     </>
   )

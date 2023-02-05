@@ -93,4 +93,14 @@
   .image-skills {
     @apply w-[100px] h-[100px] grayscale hover:grayscale-0 transition-all duration-700 ease-in-out contrast-75 hover:contrast-100 hover:drop-shadow-xl hover:animate-bounce cursor-pointer;
   }
+
+  .number-case {
+    @apply uppercase fs-monument text-center md:text-start text-[40px] leading-[35px] md:text-[80px] md:leading-[60px] xl:text-[100px] 2xl:leading-[80px];
+  }
+  .cases-title {
+    @apply uppercase fs-monument text-center md:text-start text-[40px] leading-[35px] md:text-[80px] md:leading-[60px] xl:text-[100px] 2xl:leading-[80px] mt-[20px];
+  }
+  .cases-desc {
+    @apply mt-[20px] text-justify text-[16px] md:text-[20px];
+  }
 }
