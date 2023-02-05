@@ -21,13 +21,17 @@ import CasesModena from "@/public/images/modena_2.jpg"
 export default function Home() {
   const scrollToRef = (ref) => window.scrollTo({top: ref.current.offsetTop,   behavior: 'smooth'})
   const contentRef = useRef(null)
+  const casesRef = useRef(null)
+
   const executeScroll = () => scrollToRef(contentRef)
+  const scrollAbout = () => scrollToRef(contentRef)
+  const scrollCases = () => scrollToRef(casesRef)
 
 
   return (
     <>
       <Top />
-      <Header executeScroll={executeScroll} />
+      <Header executeScroll={executeScroll} scrollAbout={scrollAbout} scrollCases={scrollCases} />
       <div className="container py-[100px] bg-round">
         <div>
           <h1 className="title-custom max-w-[760px] 2xl:max-w-full">
@@ -74,10 +78,10 @@ export default function Home() {
               <a href="" className="text-[20px] md:text-[40px]">
                 Tw
               </a>
-              <a href="" className="text-[20px] md:text-[40px]">
+              <a href="https://linkedin.com/in/nahansans" className="text-[20px] md:text-[40px]">
                 Li
               </a>
-              <a href="" className="text-[20px] md:text-[40px]">
+              <a href="https://instagram.com/naufalhanif__" className="text-[20px] md:text-[40px]">
                 Ig
               </a>
               <a href="" className="text-[20px] md:text-[40px]">
@@ -175,86 +179,90 @@ export default function Home() {
           </div>
         </div>
 
-        <Case
-          number = "/01"
-          type = "Landing Page"
-          url = "http://tokomaid.com"
-          image = {CasesTokomaid}
-          title = "Tokomaid"
-          desc = ""
-        />
-
-      <Case
-          number = "/02"
-          type = "Update several modules (maintenance)"
-          url = "https://www.modena.com"
-          // image = {CasesModena}
-          title = "modena cr"
-          desc = "!!CHANGE REQUEST!!"
-        />
-
-      <Case
-          number = "/03"
-          type = "Admin Panel BQMI to manage their products"
-          url = "#"
-          // image = {CasesModena}
-          title = "bqmi kemenag"
-          desc = "Admin Panel"
-        />
-
-      <Case
-          number = "/04"
-          type = "Boquet digital"
-          url = "https://digiflora.id"
-          // image = {CasesModena}
-          title = "Digiflora"
-          desc = "Papan bunga digital - cara yang ramah lingkungan untuk mengirim ucapan kepada orang yang Anda sayangi."
-        />
-        
-        <Case
-          number = "/05"
-          type = "Indonesia Miner event organizer"
-          url = "https://indonesiaminer.com"
-          // image = {CasesModena}
-          title = "Laguna - Indonesia Miner"
-          desc = "onesia Miner 2023 is the premier Conference & Exhibition for Indonesia Mining Top Leaders, Experts, Decision makers and all mining Industry value chain meets."
-        />
+        <section
+          ref = {casesRef}
+        >
+          <Case
+            number = "/01"
+            type = "Landing Page"
+            url = "http://tokomaid.com"
+            image = {CasesTokomaid}
+            title = "Tokomaid"
+            desc = ""
+          />
 
         <Case
-          number = "/06"
-          type = "Update several modules (maintenance)"
-          url = "https://indonesiaminer.com"
-          // image = {CasesModena}
-          title = "Sigma bimed - CR"
-          desc = ""
-        />
-        
-        <Case
-          number = "/07"
-          type = "Manage catalogs, transactions, etc and make payments for partner/clients who has a songs/albums/labels"
-          url = "https://inside.co.id"
-          // image = {CasesModena}
-          title = "Inside Digital"
-          desc = ""
-        />
+            number = "/02"
+            type = "Update several modules (maintenance)"
+            url = "https://www.modena.com"
+            // image = {CasesModena}
+            title = "modena cr"
+            desc = "!!CHANGE REQUEST!!"
+          />
 
         <Case
-          number = "/08"
-          type = "Order song with legal copyright for personal or church and user can be a partner"
-          url = ""
-          // image = {CasesModena}
-          title = "Alcore IUP (Backend)"
-          desc = ""
-        />
-        
+            number = "/03"
+            type = "Admin Panel BQMI to manage their products"
+            url = "#"
+            // image = {CasesModena}
+            title = "bqmi kemenag"
+            desc = "Admin Panel"
+          />
+
         <Case
-          number = "/09"
-          type = "Laravel"
-          url = "https://indonesiaminer.com"
-          // image = {CasesModena}
-          title = "Duta IndoMandiri"
-          desc = ""
-        />
+            number = "/04"
+            type = "Boquet digital"
+            url = "https://digiflora.id"
+            // image = {CasesModena}
+            title = "Digiflora"
+            desc = "Papan bunga digital - cara yang ramah lingkungan untuk mengirim ucapan kepada orang yang Anda sayangi."
+          />
+          
+          <Case
+            number = "/05"
+            type = "Indonesia Miner event organizer"
+            url = "https://indonesiaminer.com"
+            // image = {CasesModena}
+            title = "Laguna - Indonesia Miner"
+            desc = "onesia Miner 2023 is the premier Conference & Exhibition for Indonesia Mining Top Leaders, Experts, Decision makers and all mining Industry value chain meets."
+          />
+
+          <Case
+            number = "/06"
+            type = "Update several modules (maintenance)"
+            url = "https://indonesiaminer.com"
+            // image = {CasesModena}
+            title = "Sigma bimed - CR"
+            desc = ""
+          />
+          
+          <Case
+            number = "/07"
+            type = "Manage catalogs, transactions, etc and make payments for partner/clients who has a songs/albums/labels"
+            url = "https://inside.co.id"
+            // image = {CasesModena}
+            title = "Inside Digital"
+            desc = ""
+          />
+
+          <Case
+            number = "/08"
+            type = "Order song with legal copyright for personal or church and user can be a partner"
+            url = ""
+            // image = {CasesModena}
+            title = "Alcore IUP (Backend)"
+            desc = ""
+          />
+          
+          <Case
+            number = "/09"
+            type = "Laravel"
+            url = "https://indonesiaminer.com"
+            // image = {CasesModena}
+            title = "Duta IndoMandiri"
+            desc = ""
+          />
+        </section>
       </div>
     </>
   )
