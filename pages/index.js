@@ -183,9 +183,10 @@ export default function Home() {
           ref = {casesRef}
         >
           {
-            cases.map((item) => {
+            cases.map((item, index) => {
               return (
                 <Case
+                  key = {index}
                   number = {item.number}
                   type = {item.type}
                   url = {item.url}

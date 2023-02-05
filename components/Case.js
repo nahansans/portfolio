@@ -4,7 +4,7 @@ import ArrowRight from "@/public/icons/icon.svg"
 
 export default function Case(props) {
     return (
-        <div className="mt-[40px] md:mt-[60px] border-t border-black grid grid-cols-1 md:grid-cols-2 gap-4 pt-[40px]">
+        <div key={props.key} className="mt-[40px] md:mt-[60px] border-t border-black grid grid-cols-1 md:grid-cols-2 gap-4 pt-[40px]">
             <div>
                 <p className="number-case">
                     {props.number}
