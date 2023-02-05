@@ -98,7 +98,7 @@
     @apply uppercase fs-monument text-center md:text-start text-[40px] leading-[35px] md:text-[80px] md:leading-[60px] xl:text-[100px] 2xl:leading-[80px];
   }
   .cases-title {
-    @apply uppercase fs-monument text-center md:text-start text-[40px] leading-[35px] md:text-[80px] md:leading-[60px] xl:text-[100px] 2xl:leading-[80px] mt-[20px];
+    @apply uppercase fs-monument text-center md:text-start text-[40px] leading-[35px] md:text-[80px] md:leading-[60px] mt-[20px];
   }
   .cases-desc {
     @apply mt-[20px] text-justify text-[16px] md:text-[20px];

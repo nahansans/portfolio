@@ -11,7 +11,7 @@ export default function Case(props) {
                 </p>
                 <div className="flex justify-between items-center mt-[40px] md:mt-[250px]">
                     <span>
-                        {props.type}
+                        Develop at {props.type}
                     </span>
                     <a href={props.url} target="_blank" rel="noreferrer">
                         <Image
@@ -25,7 +25,7 @@ export default function Case(props) {
                         props.image ?
                         (
                             <Image
-                                src={props.image} className="w-full h-full object-cover"
+                                src={props.image} className="w-full h-full object-cover" alt={props.title}
                             />
                         )
                         : null

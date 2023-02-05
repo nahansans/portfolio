@@ -1,5 +1,7 @@
-import { useRef } from "react"
+import { useEffect, useRef } from "react"
 import Image from 'next/future/image'
+import { cases } from '@/data/cases.js';
+
 
 import Header from "@/components/Header"
 import Top from "@/components/Top"
@@ -14,8 +16,6 @@ import PhpImage from "@/public/images/php.png"
 import PsqlImage from "@/public/images/psql.png"
 import MysqlImage from "@/public/images/mysql.png"
 import Case from "@/components/Case"
-import CasesTokomaid from "@/public/images/tokomaid.jpg"
-import CasesModena from "@/public/images/modena_2.jpg"
 
 
 export default function Home() {
@@ -182,86 +182,20 @@ export default function Home() {
         <section
           ref = {casesRef}
         >
-          <Case
-            number = "/01"
-            type = "Landing Page"
-            url = "http://tokomaid.com"
-            image = {CasesTokomaid}
-            title = "Tokomaid"
-            desc = ""
-          />
-
-        <Case
-            number = "/02"
-            type = "Frontend"
-            url = "https://www.modena.com"
-            // image = {CasesModena}
-            title = "modena (maintenance)"
-            desc = ""
-          />
-
-        <Case
-            number = "/03"
-            type = "Admin Panel/ Backend"
-            url = "#"
-            // image = {CasesModena}
-            title = "bqmi kemenag"
-            desc = "Admin Panel"
-          />
-
-        <Case
-            number = "/04"
-            type = "Frontend"
-            url = "https://digiflora.id"
-            // image = {CasesModena}
-            title = "Digiflora"
-            desc = "Papan bunga digital - cara yang ramah lingkungan untuk mengirim ucapan kepada orang yang Anda sayangi."
-          />
-          
-          <Case
-            number = "/05"
-            type = "Frontend"
-            url = "https://indonesiaminer.com"
-            // image = {CasesModena}
-            title = "Laguna - Indonesia Miner"
-            desc = "onesia Miner 2023 is the premier Conference & Exhibition for Indonesia Mining Top Leaders, Experts, Decision makers and all mining Industry value chain meets."
-          />
-
-          <Case
-            number = "/06"
-            type = "Admin Panel/ Backend, API"
-            url = "https://indonesiaminer.com"
-            // image = {CasesModena}
-            title = "Sigma bimed - CR"
-            desc = ""
-          />
-          
-          <Case
-            number = "/07"
-            type = "Admin Panel/ Backend"
-            url = "https://inside.co.id"
-            // image = {CasesModena}
-            title = "Inside Digital"
-            desc = ""
-          />
-
-          <Case
-            number = "/08"
-            type = "Admin Panel/ Backend, Databases"
-            url = ""
-            // image = {CasesModena}
-            title = "Alcore IUP (Backend)"
-            desc = ""
-          />
-          
-          <Case
-            number = "/09"
-            type = "Frontend"
-            url = "https://indonesiaminer.com"
-            // image = {CasesModena}
-            title = "Duta IndoMandiri"
-            desc = ""
-          />
+          {
+            cases.map((item) => {
+              return (
+                <Case
+                  number = {item.number}
+                  type = {item.type}
+                  url = {item.url}
+                  image = {item.image}
+                  title = {item.title}
+                  desc = {item.desc}
+                />
+              )
+            })
+          }
         </section>
       </div>
     </>
