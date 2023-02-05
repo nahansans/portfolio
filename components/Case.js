@@ -13,7 +13,7 @@ export default function Case(props) {
                     <span>
                         {props.type}
                     </span>
-                    <a href={props.url} target="_blank">
+                    <a href={props.url} target="_blank" rel="noreferrer">
                         <Image
                         src={ArrowRight} />
                     </a>
