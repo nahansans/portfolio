@@ -9,16 +9,24 @@ export default function Header(props) {
                 {
                     props.currentMenu ?
                     <>
-                        <a className="text-normal flex-1 cursor-pointer" href="/">
-                            Naufal Hanif
-                        </a>
+                        <Link href="/">
+                            <a className="text-normal flex-1 cursor-pointer">
+                                Naufal Hanif
+                            </a>
+                        </Link>
 
-                        <a className="text-normal ml-[10px] md:ml-[40px] cursor-pointer" href="/">
-                            About
-                        </a>
-                        <a h className="text-normal ml-[10px] md:ml-[40px] mr-[10px] md:mr-[90px] cursor-pointer" href="/">
-                            Cases
-                        </a>
+                        <Link href="/">
+                            <a className="text-normal ml-[10px] md:ml-[40px] cursor-pointer">
+                                About
+                            </a>
+                        </Link>
+
+                        <Link href="/">
+                            <a h className="text-normal ml-[10px] md:ml-[40px] mr-[10px] md:mr-[90px] cursor-pointer">
+                                Cases
+                            </a>
+                        </Link>
+
                         <a href="" className="text-normal ml-[10px] md:ml-[40px]">
                             Contacts
                         </a>
