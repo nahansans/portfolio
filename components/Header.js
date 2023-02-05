@@ -35,8 +35,8 @@ export default function Header(props) {
                         <a h className="text-normal ml-[10px] md:ml-[40px] mr-[10px] md:mr-[90px] cursor-pointer" onClick={props.scrollCases}>
                             Cases
                         </a>
-                        <Link>
-                            <a href="/contacts" className="text-normal ml-[10px] md:ml-[40px]">
+                        <Link href="/contacts">
+                            <a className="text-normal ml-[10px] md:ml-[40px]">
                                 Contacts
                             </a>
                         </Link>
